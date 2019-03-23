@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="a32d94bd-f3b2-4de8-a459-7de5394c84a0" name="shell" url="http://users.metropolia.fi/~villeope">
-        <fileTransfer host="shell.metropolia.fi" port="22" rootFolder="/home2-2/v/villeope" accessType="SFTP">
+        <fileTransfer host="shell.metropolia.fi" port="22" rootFolder="/home2-2/v/villeope/public_html" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
           </advancedOptions>

@@ -17,13 +17,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
+    "homepage": ".",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.3",
     "eslint-config-google": "^0.12.0",
