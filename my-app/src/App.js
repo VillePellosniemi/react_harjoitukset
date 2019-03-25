@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
-import Table from './components/table';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import {getAllMedia} from './utils/MediaAPI';
+import Nav from './components/Nav';
+import Home from './views/Home';
+import Profile from './views/Profile';
+import Single from './views/Single';
 
 class App extends Component {
 
@@ -16,9 +20,17 @@ class App extends Component {
 
   render() {
     return (
+      <Router>
       <div className="container">
-        <Table picArray={this.state.picArray}/>
+        <Nav/>
+        <Route exact path="/" render={(props) => (
+          <Home {...props} picArray={this.state.picArray}/>
+        )}/>
+        <Route path="/profile" component={Profile}/>
+        <Route path="/single" component={Single}/>
+        <Home picArray={this.state.picArray} />
       </div>
+      </Router>
     );
   }
 }
