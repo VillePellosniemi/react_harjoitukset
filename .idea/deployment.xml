@@ -5,7 +5,7 @@
       <paths name="shell">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/myapp" local="$PROJECT_DIR$/my-app/build" web="/myapp" />
+            <mapping deploy="/public_html/http" local="$PROJECT_DIR$/my-app/build" web="/http" />
           </mappings>
         </serverdata>
       </paths>
