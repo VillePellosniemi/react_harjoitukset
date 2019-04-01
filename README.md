@@ -1,3 +1,3 @@
 # react_harjoitukset
 
-[Linkki](http://users.metropolia.fi/~villeope/myapp/)
+[Linkki](http://users.metropolia.fi/~villeope/firstapp/)
