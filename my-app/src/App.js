@@ -32,7 +32,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename='/~villeope/myapp'>
+      <Router basename='/~villeope/'>
         <div className='container'>
           <Nav checkLogin={this.checkLogin}/>
           <Route  path="/home" render={(props) => (
