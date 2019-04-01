@@ -2,17 +2,17 @@ import React from 'react';
 import Table from '../components/Table';
 import PropTypes from 'prop-types';
 
-const Home = (props) => {
+const Front = (props) => {
+  const {picArray} = props;
   return (
     <React.Fragment>
-      <h1>Home</h1>
-      <Table picArray={props.picArray}/>
+      <Table picArray={picArray}/>
     </React.Fragment>
   );
 };
 
-Home.propTypes = {
+Front.propTypes = {
   picArray: PropTypes.array,
 };
 
-export default Home;
+export default Front;
