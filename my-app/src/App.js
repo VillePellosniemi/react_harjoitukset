@@ -8,6 +8,7 @@ import Login from './views/Login';
 import Profile from './views/Profile';
 import Logout from './views/Logout';
 import Grid from '@material-ui/core/Grid';
+import Upload from './views/Upload';
 
 class App extends Component {
 
@@ -46,17 +47,20 @@ class App extends Component {
     return this.state.user !== null;
   };
 
-  componentDidMount() {
+  getMedia = () => {
     getAllMedia().then((pics) => {
       console.log(pics);
       this.setState({picArray: pics});
     });
+  };
 
+  componentDidMount() {
+    this.getMedia();
   }
 
   render() {
     return (
-      <Router basename='/~villeope/material-ui'>
+      <Router basename='/~ilkkamtk/mpjakk-react'>
         <Grid container>
           <Grid item sm={2}>
             <Nav checkLogin={this.checkLogin}/>
@@ -67,6 +71,10 @@ class App extends Component {
             )}/>
 
             <Route path="/single/:id" component={Single}/>
+
+            <Route path="/upload" render={(props) => (
+              <Upload {...props} getMedia={this.getMedia}/>
+            )}/>
 
             <Route path="/profile" render={(props) => (
               <Profile {...props} user={this.state.user}/>
@@ -87,4 +95,3 @@ class App extends Component {
 }
 
 export default App;
-
