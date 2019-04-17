@@ -5,7 +5,7 @@
       <paths name="shell">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/material-ui" local="$PROJECT_DIR$/my-app/build" web="/material-ui" />
+            <mapping deploy="/public_html/file-upload" local="$PROJECT_DIR$/my-app/build" web="/file-upload" />
           </mappings>
         </serverdata>
       </paths>
